@@ -1,5 +1,4 @@
 let count = 0
-const countElement = document.querySelector('#count')
 
 const countUp = () => {
     count++
@@ -12,5 +11,6 @@ const reset = () => {
 }
 
 const update = () => {
+    const countElement = document.querySelector('#count')
     countElement.innerText = '回数: ' + count
 }
